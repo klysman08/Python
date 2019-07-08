@@ -152,7 +152,8 @@ while (a != 999):
 
 print('A quantidade de numeros digitados foi {} e a soma deles é {}'.format(contador - 1, soma)) """
     
-
+    
+""" 
  # 65 media maior e menor
 contador = 0
 soma = 0
@@ -173,4 +174,4 @@ while (n != 0):
 
 media = soma / contador
 print('A média de todos o valores digitados é: {}'.format(media))
-print ('O menor valor digitado foi {} e o maior for {}'.format(menor, maior)) 
+print(f'O menor valor digitado foi {menor} e o maior for {maior}')  """
