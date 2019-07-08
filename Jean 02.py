@@ -35,8 +35,6 @@ print("O resultado do fatarial digitado é: {}".format(s))
 
 '''
 
-
-
 '''#Soma de todos os impares de 1 a 100
 soma = 0
 for c in range (1, 100):
