@@ -175,3 +175,5 @@ while (n != 0):
 media = soma / contador
 print('A média de todos o valores digitados é: {}'.format(media))
 print(f'O menor valor digitado foi {menor} e o maior for {maior}')  """
+
+

@@ -106,3 +106,33 @@ print (f'Total de pessoas cadastradas {contador} || {total} maiores de 18 anos  
 
 
 
+total = maior = menor = continuar = 0
+contador = 0
+
+while True:
+    nome = str(input('Qual o nome do produto? '))
+    preço = int(input('Qual o preço dele? '))
+
+    if ( preço > maior ):
+        maior = preço
+        nmaior = nome
+    else:
+        menor = preço
+        nmenor = nome
+         
+    total += preço
+    
+    continuar = str(input('Deseja continuar [S/N]: ')).strip().upper()[0]
+
+    while continuar not in 'SsNn':
+        continuar = str(input('Dados invalidos. tente novamente: '))
+
+    if ( continuar == 'N'):
+        break
+
+    if ( preço > 1000 ):
+        contador += 1 
+
+print('-'*20)
+print (f'O total gasto na compra foi {total}\nA quantidade de produtos maiores que 1000 foram {contador}\nO produto mais caro foi {nmaior}\nO mais barato foi {menor}')
+print('-'*20) 
