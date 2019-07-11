@@ -26,7 +26,7 @@ print(f'A soma dos numeros digitados foi {soma} e quantidade digitada foi {conta
 
 
 
-""" 67
+""" 67 tabuada
  while True:
     n = int(input('Digite um numero para a sua tabuada: '))
     i = 0
@@ -73,7 +73,7 @@ while True:
 print(f'Numero de tentativas: {contador}') """
 
 
- # 69 
+# 69 
 """ total = m = f = contador =  0
 
 while True:
@@ -84,15 +84,17 @@ while True:
     while g not in 'MF':
         g = str(input('Qual seu género: ')).strip().upper()[0]
 
-    if ( i > 18):
+    if ( i >= 18):
         total += 1
 
     if ( g == 'M'):
         m += 1
     if ( g == 'F'):
         if ( i > 20):
-            f += 1     
-
+            f += 1  
+    
+    c = ' '
+    while g not in 'SN':
     c = str(input('Deseja registrar outro [S/N]:')).strip().upper()[0]
     
     if( c == 'N'):
@@ -105,34 +107,72 @@ print (f'Total de pessoas cadastradas {contador} || {total} maiores de 18 anos  
 
 
 
-
-total = maior = menor = continuar = 0
-contador = 0
+"""  # 70 
+total = maior = menor = cont = continuar = 0
+mil = 0
 
 while True:
     nome = str(input('Qual o nome do produto? '))
     preço = int(input('Qual o preço dele? '))
+    cont += 1
 
-    if ( preço > maior ):
+    if ( preço >= maior ):
         maior = preço
         nmaior = nome
-    else:
+
+    if ( cont == 1 ) or ( preço < menor ):
         menor = preço
         nmenor = nome
-         
-    total += preço
-    
-    continuar = str(input('Deseja continuar [S/N]: ')).strip().upper()[0]
 
+    
+    total += preço
+
+    if ( preço > 1000 ):
+        mil += 1
+
+
+    continuar = str(input('Deseja continuar [S/N]: ')).strip().upper()[0]
     while continuar not in 'SsNn':
         continuar = str(input('Dados invalidos. tente novamente: '))
 
     if ( continuar == 'N'):
         break
 
-    if ( preço > 1000 ):
-        contador += 1 
-
 print('-'*20)
-print (f'O total gasto na compra foi {total}\nA quantidade de produtos maiores que 1000 foram {contador}\nO produto mais caro foi {nmaior}\nO mais barato foi {menor}')
-print('-'*20) 
+print (f'O total gasto na compra foi {total}\nA quantidade de produtos maiores que 1000 foram {mil}\nO produto mais caro foi {nmaior} custando {maior}\nO mais barato foi {nmenor} custando {menor}')
+print('-' * 20)  """
+
+
+
+""" # 71 Caixa Eletrônico 
+valor = int(input('Qual o valor para sacar? '))
+
+total = valor
+ced = 50
+totalced = 0
+
+nota50 = valor // 50
+valor = valor % 50
+
+print(nota50)
+print(valor)
+
+while True:
+    if total >= ced:
+        total -= ced
+        totalced += 1
+    else:
+        if totalced > 0:
+            print(f'Total de {totalced} cedulas de R$ {ced}')
+        if ced == 50:
+            ced = 20
+        elif ced == 20:
+            ced == 10
+        elif ced == 10:
+            ced == 1
+        elif ced == 1:
+            ced = 0
+        totalced = 0
+        if total == 0:
+            break
+print('sacar') """
