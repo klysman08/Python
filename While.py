@@ -32,7 +32,19 @@ print("Você digitou {} pares e {} impares".format(par, imp))
 #EXERCICIOS
 
 
+""" #Fatorial usando While
+count = 1
+e = 1
+while count <= f:
+    e = e*count
+    count += 1
+resultado2 = e
+print("O resultado do fatarial digitado é: {}".format(resultado2))
+
+ """
 """ 
+
+
 i = 0
 while (i != 'M' and i != 'F'):
      i = str(input('Digite seu genero: ')).upper().strip()[0]
