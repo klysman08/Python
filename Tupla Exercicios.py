@@ -90,7 +90,7 @@ print(count) """
 
 """ #076
 
-produtos = ('pao', 3, 'leite', 3, 'queijo', 5, 'requeijão', 5, 'suco', 3, 'macarrao', 3)
+produtos = ('pao', 3, 'leiteee', 3, 'queijo', 5, 'requeijão', 5, 'suco', 3, 'macarrao', 3)
 
 for i in range(0, len(produtos)):
         if (i % 2) == 0:
