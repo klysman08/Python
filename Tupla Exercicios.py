@@ -14,11 +14,13 @@ while True:
 
 linguagens = ('Java', 'C', 'Python', 'C++', 'Visual Basic', 'JavaScripy', 'C#', 'PHP', 'SQL', 'Objective-C')
 
-print('='*20)
+print('=' * 20)
+print(linguagens[:5])
 for i in range(0, 5):
     print(linguagens[i])
 
 print('=' * 20)
+print(linguagens[-4:])
 for i in range(1, 5):
     print(linguagens[-i])
 
@@ -57,8 +59,10 @@ for k in range(0, len(tupla)):
         menor = tupla[k]
 
 print(maximo)
-print(menor) """
-
+print(max(tupla))
+print(min(tupla))
+print(menor)
+ """
 
 
 """ #075
@@ -94,9 +98,19 @@ produtos = ('pao', 3, 'leiteee', 3, 'queijo', 5, 'requeijão', 5, 'suco', 3, 'ma
 
 for i in range(0, len(produtos)):
         if (i % 2) == 0:
-            print(f'{produtos[i]}')
+            print(f'{produtos[i]:.<30}', end='')
 
         else:
-            print(f'..................{produtos[i]} R$') """
+            print(f'..................{produtos[i]:.2f} R$') """
 
 
+""" #077
+
+linguagens = ('Java', 'C', 'Python', 'C++', 'Visual Basic',
+                'JavaScripy', 'C#', 'PHP', 'SQL', 'Objective-C')
+i = 0
+for i in linguagens:
+    print(f'\nNa palavra {i.upper()} temos ', end='')
+    for letra in i:
+        if letra.lower() in 'aeiou':
+            print(letra, end=' ') """
