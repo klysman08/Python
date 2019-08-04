@@ -10,7 +10,7 @@ while True:
     else:
         print('Somente números de 0 a 10') """
 
-""" #73
+""" #073
 
 linguagens = ('Java', 'C', 'Python', 'C++', 'Visual Basic', 'JavaScripy', 'C#', 'PHP', 'SQL', 'Objective-C')
 
@@ -62,7 +62,7 @@ print(maximo)
 print(max(tupla))
 print(min(tupla))
 print(menor)
- """
+"""
 
 
 """ #075

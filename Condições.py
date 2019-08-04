@@ -69,10 +69,3 @@ if a < b+c and b < a+c and c < a+b:
     print('Parabens')
 else:
     print('Impossível formar o triangulo')'''
-
-
-
-
-
-
-

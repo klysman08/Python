@@ -23,8 +23,8 @@ posicao = lista.index(maior)
 print(f'O menor valor é: {menor} e o maior valor é {maior} e está na posição {posicao}') """
 
 
-#079
-""" lista = list()
+"""#079
+lista = list()
 while True:
     n = int(input('Digite um numero: '))
 
@@ -40,9 +40,9 @@ print(sorted(lista))
 print(lista) """
 
 
-#80
+""" #080
 
-""" lista = list()
+lista = list()
 
 for i in range(0, 5):
     n = int(input(f'Digite o {i+1} numero: '))
@@ -60,7 +60,7 @@ for i in range(0, 5):
             pos += 1
 print(lista) """
 
-#81
+""" #081
 lista= list()
 while True:
 
@@ -76,4 +76,4 @@ print(lista)
 if 5 in lista:
     print(f'O valor 5 está na lista e na posição {lista.index(5)} e lista tem {len(lista)} elementos')
 else:
-    print('O valor 5 não está na lista')
+    print('O valor 5 não está na lista') """

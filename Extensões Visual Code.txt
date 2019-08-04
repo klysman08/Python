@@ -11,6 +11,7 @@ code --install-extension HookyQR.beautify
 code --install-extension mechatroner.rainbow-csv
 code --install-extension miramac.vscode-exec-node
 code --install-extension ms-python.python
+code --install-extension naumovs.color-highlight
 code --install-extension oderwat.indent-rainbow
 code --install-extension ritwickdey.LiveServer
 code --install-extension thekalinga.bootstrap4-vscode
