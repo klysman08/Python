@@ -77,3 +77,58 @@ if 5 in lista:
     print(f'O valor 5 está na lista e na posição {lista.index(5)} e lista tem {len(lista)} elementos')
 else:
     print('O valor 5 não está na lista') """
+
+""" #082
+
+lista = list()
+listapar = list()
+listaimpar = list()
+
+while True:
+    n = int(input('Digite um número para lista e 0 para sair: '))
+    
+    if n == 0:
+        break
+    
+    lista.append(n)
+
+for i in range(0, len(lista)):
+    if lista[i] % 2 == 0:
+        listapar.append(lista[i])
+    else:
+        listaimpar.append(lista[i])
+
+for i, v in enumerate(lista):
+    if v % 2 == 0:
+        listapar.append(v)
+    else:
+        listaimpar.append(v)
+
+print(f'Lista completa {lista}')
+print(f'Lista par {listapar}')
+print(f'Lista impar {listaimpar}') """
+
+
+
+""" #083
+
+espressao = str(input("Digite uma expressão dentro de parenteses: "))
+
+lista = list()
+
+for s in espressao:
+    if s == '(':
+        lista.append('(')
+
+    elif s == ')':
+        if len(lista) > 0:
+            lista.pop()
+
+        else:
+            lista.append(')')
+            break
+
+if len(lista) == 0:
+    print('Sua expressão está correta')
+else:
+    print('Tente novamente') """
