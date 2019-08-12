@@ -191,10 +191,10 @@ for c in range(0, 3):
     for l in matriz[c]:
         print(f'[{l:^5}]', end='') """
 
-#086
+""" #086
 
 matriz = [[],[],[]]
-for i in range(0,3):
+for i in range(0,4):
     for j in range(0, 3):
         n = int(input(f'Insira a posição [{i},{j}]: '))
         matriz[i].append(n)
@@ -212,6 +212,7 @@ for c in range(0, 3):
 
     if c == 1:
         maior = menor = matriz[1][c]
+        
     elif matriz[1][c] > maior:
         maior = matriz[1][c]
 
@@ -219,7 +220,21 @@ for c in range(0, 3):
 
     print()
 
+print(soma) #soma dos valores pares
+print(soma2) #soma dos valores da 3 coluna
+print(maior) # maior valor da segunda linha """
 
-print(soma)
-print(soma2)
-print(maior)
+from random import randint
+from time import sleep
+
+
+n = int(input('Quantos jogos devem ser gerados? '))
+lista = list()
+for i in range(0, n):
+    for c in range(0, 6):
+        lista.append(randint(0, 60))
+    
+    lista.sort()
+    print(lista)
+    lista.clear()
+    sleep(2) 
