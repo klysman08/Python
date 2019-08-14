@@ -224,7 +224,7 @@ print(soma) #soma dos valores pares
 print(soma2) #soma dos valores da 3 coluna
 print(maior) # maior valor da segunda linha """
 
-from random import randint
+""" from random import randint
 from time import sleep
 
 
@@ -237,4 +237,24 @@ for i in range(0, n):
     lista.sort()
     print(lista)
     lista.clear()
-    sleep(2) 
+    sleep(2)  """
+
+lista = [[],[]]
+i = j = 0
+while i <= 1:
+    while j <= 3:
+        nome = str(input('Qual o nome do aluno: '))
+        nota1 = int(input('Qual a primeira nota: '))
+        nota2 = int(input('Qual a segunda nota: '))
+
+        lista[i].append(nome)
+        lista[i].append(nota1)
+        lista[i].append(nota2)
+        media = (nota1 + nota2) // 2
+        lista[i].append(media)
+
+        j += 1
+    i += 1
+
+
+print(lista)
