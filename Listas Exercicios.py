@@ -239,22 +239,34 @@ for i in range(0, n):
     lista.clear()
     sleep(2)  """
 
-lista = [[],[]]
+
+#089
+lista = list()
 i = j = 0
-while i <= 1:
-    while j <= 3:
-        nome = str(input('Qual o nome do aluno: '))
-        nota1 = int(input('Qual a primeira nota: '))
-        nota2 = int(input('Qual a segunda nota: '))
+while True:
+    nome = str(input('Qual o nome do aluno: '))
+    nota1 = int(input('Qual a primeira nota: '))
+    nota2 = int(input('Qual a segunda nota: '))
+    media = (nota1 + nota2) // 2
 
-        lista[i].append(nome)
-        lista[i].append(nota1)
-        lista[i].append(nota2)
-        media = (nota1 + nota2) // 2
-        lista[i].append(media)
+    lista.append([nome, [nota1, nota2] , media])
 
-        j += 1
-    i += 1
-
+    resposta = str(input('Quer continuar? [n/s]'))
+    if resposta in 'Nn':
+        break
 
 print(lista)
+print(f'{"No.":<4}{"Nome":<10}{"Média":>8}')
+print('*' * 20)
+
+for i, a in enumerate(lista):
+    print(f'{i:<4}{a[0]:<10}{a[2]:>8.1f}')
+
+while True:
+    aluno = int(input('Mostrar notas de qual aluno? (digite 99 para sair)'))
+    print(f'Notas do aluno {lista[aluno][0]} foram {lista[aluno][1]}')
+
+    if aluno == 99:
+        break
+
+
