@@ -5,9 +5,8 @@ sequencia para gerar.
 (Dica: A sequencia Fibonacci é uma série onde o próximo número na sequencia é a
 soma dos dois números anteriores da série.E assim: 1, 1, 2, 3, 5, 8, 13, ...). """
 
-
+""" 
 def fibonacci(n):
-    ## Seu código
     if n <= 1:
         return (n)
     else:
@@ -19,4 +18,4 @@ nfib = int(input("Digite o número de termos: "))
 print("Sequência de Fibonacci:")
 
 for i in range(1, nfib+1):
-    print(fibonacci(i))
+    print(fibonacci(i)) """    
