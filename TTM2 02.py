@@ -5,18 +5,22 @@ sequencia para gerar.
 (Dica: A sequencia Fibonacci é uma série onde o próximo número na sequencia é a
 soma dos dois números anteriores da série.E assim: 1, 1, 2, 3, 5, 8, 13, ...). """
 
+n = int(input("Digite um numero para a sua função Fibonacci: "))
+n1 = 0
+n2 = 1
 
-def fibonacci(n):
-    ## Seu código
-    if n <= 1:
-        return (n)
-    else:
-        return(fibonacci(n-1) + fibonacci(n-2))
+print(f' {n1} -> {n2}', end='')
+
+cont = 3
+while cont <= n+1:
+    n3 = n1 + n2
+    n1 = n2
+    n2 = n3
+    cont += 1
+    print(f' -> {n3}', end='')
 
 
-nfib = int(input("Digite o número de termos: "))
 
-print("Sequência de Fibonacci:")
 
-for i in range(1, nfib+1):
-    print(fibonacci(i))
+
+
