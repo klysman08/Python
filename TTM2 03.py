@@ -43,6 +43,8 @@ while (cont != 0 and letra != 'sair' and erros <= 5):
         tentativas_lista.sort()
 
 
+
+
     # Fim da sua lógica
 
 if letra == "sair":
