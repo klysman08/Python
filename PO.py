@@ -40,10 +40,20 @@ class Fracao:
     def negar(self):
         return Fracao(-self.numerador, -self.denominador)
 
-a = Fracao(5, 4)
-b = Fracao(2, 2)
+    def __str__(self):
+        representation = "{}/{}".format(self.numerador, self.denominador)
+        return representation
 
-multiplicar = a.multiplicar(b)
-dividir = a.dividir(b)
+    def __repr__(self):
+        representation = "Fracao({}, {})".format(self.numerador, self.denominador)
+        return representation
 
-print(f'{multiplicar} e {dividir}')
+
+
+print("*"*30)
+
+primeira = Fracao(5,7)
+print(primeira)
+
+lista = [2 ,' teste ', primeira]
+print(lista)
