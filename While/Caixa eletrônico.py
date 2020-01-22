@@ -1,31 +1,3 @@
-#Estrutura de repecição com condição de parada
-
-""" while True:
-    print('Olá mundo')
-    break """
-
-
-####################################
-
-#EXERCICIOS
-
-# 66
-
-""" 
- """
-
-
-
-"""  """
-
-
-
-""" 68
- """
-
-
-# 69 
-""" """
 
 # 71 Caixa Eletrônico 
 valor = int(input('Qual o valor para sacar? '))
