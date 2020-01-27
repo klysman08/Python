@@ -25,6 +25,7 @@ lista = list()
 for c in range(0, 3):
     estado['UF'] = str(input('Nome do estado: '))
     estado['sigla'] = str(input('Qual a sigla: '))
+    estado['Numero'] = str(input('Qual o numero: '))
     lista.append(estado.copy())
 print(lista)
 
