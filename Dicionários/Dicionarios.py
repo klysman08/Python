@@ -30,6 +30,18 @@ for c in range(0, 3):
 print(lista)
 
 for e in lista:
-    for v in e.values():
-        print(v, end=' ')
-    print()
+    for k, v in e.items():
+        print(f'O campo {k} tem valor {v}.')
+
+
+#Função para retornar os valores do dicionario
+print(estado.values())
+
+#Função para retornar quais são as chaves do dicionario
+print(estado.keys())
+
+#Função para retornar o valeus e keys
+print(estado.items())
+
+for k, v in estado.items():
+    print(f' {k} = {v}')
