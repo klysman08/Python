@@ -16,4 +16,4 @@ for i in range(0, 5):
                 print(f'Adicionado na posição {pos} da lista')
                 break
             pos += 1
-print(lista) 
+print(lista)

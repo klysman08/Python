@@ -27,12 +27,12 @@ for c in range(0, 3):
     estado['sigla'] = str(input('Qual a sigla: '))
     estado['Numero'] = str(input('Qual o numero: '))
     lista.append(estado.copy())
+    
 print(lista)
 
 for e in lista:
     for k, v in e.items():
         print(f'O campo {k} tem valor {v}.')
-
 
 #Função para retornar os valores do dicionario
 print(estado.values())
