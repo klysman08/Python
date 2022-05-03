@@ -1,3 +1,5 @@
+import math
+
 valocidade_maxima = int(input("Digite a velocidade máxima: "))
 velocidade_registrada = int(input("Digite a velocidade registrada: "))
 
