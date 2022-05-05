@@ -46,3 +46,6 @@ def estacionamento(hc, mc, hp, mp):
         if minuto != 0:
             hora += 1 
         return (hora * 2)
+    
+    
+    
