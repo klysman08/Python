@@ -14,17 +14,6 @@ def fatorial_while(n):
 print(fatorial(5), fatorial_while(5))
 
 
-n = 0
-count = 0
-media = 0
 
-while n != 0:
-    n = int(input("Digite um número: "))
-    if n > 0:
-        media = media + n
-        count += 1
-    if n == 0:
-        media = media / count
-        break
-    
-print(count, media)
+
+
