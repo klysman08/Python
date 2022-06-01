@@ -7,7 +7,7 @@ while True:
         break
 
     if n in lista:
-        print('Esse numero já exite na lista, tente novamente!')
+        print('Esse numero já existe na lista, tente novamente!')
     else:
         lista.append(n)
 
