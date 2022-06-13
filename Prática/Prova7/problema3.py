@@ -1,12 +1,10 @@
-from datetime import date
+from datetime import date, datetime
 
-arquivo = open("texto.txt", 'r')
+arquivo = open("/home/klysman/GitHub/Python/texto.txt", 'r')
 data = []
 datas = []
 lista_datas = []
 nomes = []
-hoje=[2019,10,23]
-idades = []
 
 for l in arquivo:
     nome, data = l.split()
@@ -18,29 +16,19 @@ for i in datas:
     dia = int(dia)
     mes = int(mes)
     ano = int(ano)
+    
     data = [ano,mes,dia]
     lista_datas.append(data)
 
-ages = []
+def calcula_idade(data_nascimento): 
+    today = datetime(2021,12,31)
+    age = today.year - data_nascimento.year - ((today.month, today.day) < (data_nascimento.month, data_nascimento.day)) 
+    return age 
 
-for k in lista_datas:
-    ano = hoje[0] - k[0]
-    idades.append(ano)
-
-    d0 = date(k[0], k[1], k[2])
-    d1 = date(hoje[0], hoje[1], hoje[2])
-    delta = d1 - d0
-
-    ages.append(delta)
-
-agora = ages[0]
-print(agora.year)
-
-for n in range(0,4):
-    print (f'Nome: {nomes[n]}')
-    print (f'Idade: {idades[n]} anos')
-
-
+for n in range(0,len(nomes)):
+    idade = lista_datas[n]
+    print(f'Nome: {nomes[n]}')
+    print(f'Idade: {calcula_idade(date(idade[0], idade[1], idade[2]))} anos')
 
 arquivo.close()
 
