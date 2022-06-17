@@ -1,6 +1,6 @@
 from datetime import date, datetime
 
-arquivo = open("/home/klysman/GitHub/Python/texto.txt", 'r')
+arquivo = open("/workspace/Python/texto.txt", 'r')
 data = []
 datas = []
 lista_datas = []
