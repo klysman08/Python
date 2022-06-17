@@ -13,4 +13,3 @@ for linha in arquivo:
             
 
 arquivo.close()
-    
