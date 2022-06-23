@@ -1,12 +1,11 @@
-#teste
-
-def exponte_recursivo(base, expoente):
+def power(base, expoente):
     if expoente == 0:
         return 1
     else:
         return base * exponte_recursivo(base, expoente - 1)
     
-base = int(input("Digite a base: "))
-expoente = int(input("Digite o expoente: "))
+base = int(input("Digite k: "))
+expoente = int(input("Digite n: "))
 
-print(exponte_recursivo(base, expoente))
+print(power(base, expoente))
+
