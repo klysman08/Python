@@ -1,8 +1,19 @@
-uni = { 0: '', 1: 'I', 2: 'II', 3: 'III', 4: 'IV', 5: 'V', 6: 'VI', 7: 'VII', 8: 'VIII', 9: 'IX' }
-dez = { 0: '', 1: 'X', 2: 'XX', 3: 'XXX', 4: 'XL', 5: 'L', 6: 'LX', 7: 'LXX', 8: 'LXXX', 9: 'XC' }
-cen = { 0: '', 1: 'C', 2: 'CC', 3: 'CCC', 4: 'CD', 5: 'D', 6: 'DC', 7: 'DCC', 8: 'DCCC', 9: 'CM' }
+uni = {0: '', 1: 'I', 2: 'II', 3: 'III', 4: 'IV',
+       5: 'V', 6: 'VI', 7: 'VII', 8: 'VIII', 9: 'IX'}
+dez = {0: '', 1: 'X', 2: 'XX', 3: 'XXX', 4: 'XL',
+       5: 'L', 6: 'LX', 7: 'LXX', 8: 'LXXX', 9: 'XC'}
+cen = {0: '', 1: 'C', 2: 'CC', 3: 'CCC', 4: 'CD',
+       5: 'D', 6: 'DC', 7: 'DCC', 8: 'DCCC', 9: 'CM'}
 
 n = int(input('Digite um número: '))
+
+print(f'Unidade: {uni[n // 10]}')
+
+print(f'Dezena: {dez[n % 10]}')
+
+print(f'Centena: {cen[n // 100]}')
+
+print(f'Milhar: {uni[n // 1000]}')
 
 c = int(n / 100)
 n = n - (c * 100)
