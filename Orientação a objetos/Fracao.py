@@ -5,7 +5,8 @@
 # somar; subtrair; multiplicar; inverter
 
 class Fracao:
-    def __init__(self, num, den):  # self; ponto de referência na memoria onde o objeto será instanciado
+    # self; ponto de referência na memoria onde o objeto será instanciado
+    def __init__(self, num, den):
         self.numerador = num
 
         if den == 0:
@@ -21,7 +22,7 @@ class Fracao:
         num = self.numerador * outra.denominador + outra.numerador*self.denominador
         den = self.denominador*outra.denominador
         return Fracao(num, den)
-    
+
     def subtrair(self, outra):
         return self.somar(self, outra.negar())
 
@@ -45,15 +46,15 @@ class Fracao:
         return representation
 
     def __repr__(self):
-        representation = "Fracao({}, {})".format(self.numerador, self.denominador)
+        representation = "Fracao({}, {})".format(
+            self.numerador, self.denominador)
         return representation
-
 
 
 print("*"*30)
 
-primeira = Fracao(5,7)
+primeira = Fracao(5, 7)
 print(primeira)
 
-lista = [2 ,' teste ', primeira]
+lista = [2, ' teste ', primeira]
 print(lista)

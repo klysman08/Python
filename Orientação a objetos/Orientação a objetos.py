@@ -6,6 +6,7 @@ class Cachorro():
         self.cor = cor
         self.tamanho = tamanho
 
+
 dog1 = Cachorro("Labrador", "Marrom", "2 metro")
 dog2 = Cachorro("Vira Lata", "Preto", "1 metro")
 
