@@ -2,8 +2,10 @@
 
 """ Output Your standardize data function will return arr with each of its rows standardized. Specifically, for a row of values: """
 
-import numpy as np
 
+
+
+import numpy as np
 def standardize_data(arr):
     """
     Standardizes each row of a 2-D NumPy array.
@@ -19,9 +21,11 @@ def standardize_data(arr):
     row_stdevs = np.std(arr, axis=1)
 
     # Subtract the mean and divide by the standard deviation for each row
-    standardized_arr = (arr - row_means[:, np.newaxis]) / row_stdevs[:, np.newaxis]
+    standardized_arr = (
+        arr - row_means[:, np.newaxis]) / row_stdevs[:, np.newaxis]
 
     return standardized_arr
+
 
 """ Test with arr = np.array([
     [1.2, -0.3, 1.3],

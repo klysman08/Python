@@ -9,6 +9,7 @@ Output Your df2matrix function should retum a NumPy array containing the numeric
 import numpy as np
 import pandas as pd
 
+
 def df2matrix(df):
     """
     Converts a DataFrame object to a NumPy array with the specified format.
