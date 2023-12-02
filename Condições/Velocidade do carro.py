@@ -1,7 +1,7 @@
 v = int(input('Qual a velocidade do carro: '))
-if  v >= 50:
+if v >= 50:
     print('Você foi multado')
     m = v - 50
-    print('Você deve pagar uma multa no valor de {} reais'.format(m*7))
+    print(f'Você deve pagar uma multa no valor de {m * 7} reais')
 else:
     print('Tudo certo')

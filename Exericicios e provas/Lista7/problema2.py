@@ -1,15 +1,12 @@
-arquivo = open("texto.txt", 'r')
+with open("texto.txt", 'r') as arquivo:
+    texto = []
 
-texto = []
+    for linha in arquivo:
+        texto = linha.split()
 
-for linha in arquivo:
-    texto = linha.split()
-    
-maior = max(texto, key=len)
+    maior = max(texto, key=len)
 
-maior = maior.rstrip()
+    maior = maior.rstrip()
 
-print (maior)
-print (len(maior))
-
-arquivo.close()
+    print (maior)
+    print (len(maior))

@@ -1,16 +1,13 @@
 dados = dict()
-lista = list()
+lista = []
 
-for c in range (0, 3):
+for _ in range (0, 3):
     dados['nome'] = str(input('Digite o nome do aluno:'))
     dados['media'] = int(input('Digite a média desse aluno: '))
-    
-    if dados['media'] >= 7:
-        dados['situação'] = 'aprovado'
-    else: dados['situação'] = 'reprovado'
-    
+
+    dados['situação'] = 'aprovado' if dados['media'] >= 7 else 'reprovado'
     lista.append(dados.copy())
-    
+
 for i in lista:
 
     print(f'{i}')

@@ -1,12 +1,12 @@
 #081
-lista= list()
+lista = []
 while True:
 
     n = int(input('Digite um numero: '))
 
     if n == 0:
         break
-    
+
     lista.append(n)
 lista.sort(reverse=True)
 print(lista)

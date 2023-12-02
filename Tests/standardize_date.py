@@ -20,11 +20,7 @@ def standardize_data(arr):
     row_means = np.mean(arr, axis=1)
     row_stdevs = np.std(arr, axis=1)
 
-    # Subtract the mean and divide by the standard deviation for each row
-    standardized_arr = (
-        arr - row_means[:, np.newaxis]) / row_stdevs[:, np.newaxis]
-
-    return standardized_arr
+    return (arr - row_means[:, np.newaxis]) / row_stdevs[:, np.newaxis]
 
 
 """ Test with arr = np.array([

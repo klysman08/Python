@@ -23,10 +23,7 @@ def total_segundos(horas, minutos, segundos):
     return horas * 3600 + minutos * 60 + segundos
 
 def paridade(x):
-    if x % 2 == 0:
-        return True
-    else:
-        return False
+    return x % 2 == 0
     
 import math
     
@@ -37,10 +34,7 @@ def hipotenusa(cateto1, cateto2):
     return math.sqrt(cateto1 ** 2 + cateto2 ** 2)
 
 def peso_ideal(altura, sexo):
-    if sexo == 'm':
-        return 72.7 * altura - 58
-    else:
-        return 62.1 * altura - 44.7
+    return 72.7 * altura - 58 if sexo == 'm' else 62.1 * altura - 44.7
     
 def soma_digitos(x):
     soma = 0

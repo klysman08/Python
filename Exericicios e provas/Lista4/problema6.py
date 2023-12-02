@@ -13,8 +13,10 @@ def fibonacci_for(n):
         return 1
     else:
         fibonacci_for_list = [0, 1]
-        for i in range(2, n+1):
-            fibonacci_for_list.append(fibonacci_for_list[i-1] + fibonacci_for_list[i-2])
+        fibonacci_for_list.extend(
+            fibonacci_for_list[i - 1] + fibonacci_for_list[i - 2]
+            for i in range(2, n + 1)
+        )
         return fibonacci_for_list[n]
 
 def fibonacci_while(n):

@@ -17,18 +17,16 @@ def marge(lista, inicio, meio, fim):
     top_left, top_rigth = 0, 0
 
     for k in range(inicio, fim):
-        if top_left >= len(left):
+        if (
+            top_left >= len(left)
+            or top_rigth < len(rigth)
+            and left[top_left] >= rigth[top_rigth]
+        ):
             lista[k] = rigth[top_rigth]
             top_rigth += 1
-        elif top_rigth >= len(rigth):
-            lista[k] = left[top_left]
-            top_left += 1
-        elif left[top_left] < rigth[top_rigth]:
-            lista[k] = left[top_left]
-            top_left += 1
         else:
-            lista[k] = rigth[top_rigth]
-            top_rigth += 1
+            lista[k] = left[top_left]
+            top_left += 1
 
 
 margesort(lista)

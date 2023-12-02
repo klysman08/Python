@@ -7,8 +7,8 @@ while i <= num / 2:
     if num % i == 0:
         f=1
         break
-    i=i+1
-    
+    i += 1
+
 if f==0:
     print("The entered number is a PRIME number")
 else:

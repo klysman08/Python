@@ -10,4 +10,6 @@ while (a != 999):
 
     contador += 1
 
-print('A quantidade de numeros digitados foi {} e a soma deles é {}'.format(contador - 1, soma)) 
+print(
+    f'A quantidade de numeros digitados foi {contador - 1} e a soma deles é {soma}'
+) 

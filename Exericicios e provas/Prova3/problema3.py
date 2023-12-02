@@ -5,14 +5,12 @@ def estacionamento(horas_chegada, minutos_chegada, hora_saida, minuto_saida):
 
     if horas_chegada < hora_saida:
         minutos_totais = minutos2 - minutos1
-        horas_totais = minutos_totais // 60
     else:
         minutos_totais = minutos1 - minutos2
-        horas_totais = minutos_totais // 60
-
+    horas_totais = minutos_totais // 60
     if horas_totais <= 2:
         return horas_totais * 1.00
-    elif horas_totais >2 and horas_totais <= 4:
+    elif horas_totais <= 4:
         return (horas_totais) * 1.40
     else:
         return horas_totais * 2.00
@@ -34,17 +32,13 @@ def estacionamento(hc, mc, hp, mp):
         minuto = ((24 * 60) - minc + minp) % 60
         hora = int(((24 * 60) - minc + minp) / 60)
 
+    if minuto != 0:
+        hora += 1
     if hora < 2 or (hora == 2 and minuto == 0):
-        if minuto != 0:
-            hora += 1
         return hora
     elif hora < 4 or (hora == 4 and minuto == 0):
-        if minuto != 0:
-            hora += 1
         return (hora * 1.40)
     else:
-        if minuto != 0:
-            hora += 1 
         return (hora * 2)
     
     

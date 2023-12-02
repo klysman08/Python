@@ -1,8 +1,5 @@
 def verifica_triangulo(a, b, c):
-    if a + b > c and a + c > b and b + c > a:
-        return True
-    else:
-        return False
+    return a + b > c and a + c > b and b + c > a
 
 def tipo_triangulo(a, b, c):
     if a == b == c:

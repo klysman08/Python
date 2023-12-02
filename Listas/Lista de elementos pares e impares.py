@@ -1,15 +1,15 @@
 #082
 
-lista = list()
-listapar = list()
-listaimpar = list()
+lista = []
+listapar = []
+listaimpar = []
 
 while True:
     n = int(input('Digite um número para lista e 0 para sair: '))
-    
+
     if n == 0:
         break
-    
+
     lista.append(n)
 
 for i in range(0, len(lista)):
@@ -18,7 +18,7 @@ for i in range(0, len(lista)):
     else:
         listaimpar.append(lista[i])
 
-for i, v in enumerate(lista):
+for v in lista:
     if v % 2 == 0:
         listapar.append(v)
     else:

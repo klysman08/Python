@@ -3,7 +3,7 @@ from random import randint
 from operator import itemgetter
 
 dicionario = dict()
-lista = list()
+lista = []
 
 """ for c in range (0, 4):
     
@@ -16,7 +16,7 @@ jogo = {'jogador1': randint(1,6),
         'jogador3': randint(1,6),
         'jogador4': randint(1,6)}
 
-ranking = list()
+ranking = []
 ranking = sorted(jogo.items(), key=itemgetter(1), reverse=True)
 print(ranking) 
 

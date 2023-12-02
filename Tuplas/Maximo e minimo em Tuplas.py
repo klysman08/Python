@@ -1,12 +1,8 @@
 #074
 from random import randint
-lista = []
 tupla = ((randint(0, 10), randint(0, 10), randint(0, 10),
         randint(0, 10), randint(0, 10), randint(0, 10)))
-for i in range(0,6):
-    lista.append(randint(0, 10))
-
-
+lista = [randint(0, 10) for _ in range(0,6)]
 print(lista)
 print(tupla)
 

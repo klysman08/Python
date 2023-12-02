@@ -1,6 +1,6 @@
 #078
 maior = menor = 0
-lista = list()
+lista = []
 for i in range(0, 5):
     lista.append(int(input('Digite um numero: ')))
     if i == 0:
@@ -12,11 +12,8 @@ for i in range(0, 5):
             menor = lista[i]
 
 for pos, m in enumerate(lista):
-    if m == maior:
+    if m in [maior, menor]:
         print(f'{pos}...')
-    elif m == menor:
-        print(f'{pos}...')
-        
 maior = max(lista)
 posicao = lista.index(maior)
 

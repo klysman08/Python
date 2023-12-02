@@ -1,18 +1,12 @@
-arquivo = open("texto.txt", 'r')
+with open("texto.txt", 'r') as arquivo:
+    n = int(input("Digite o número n: ")) 
 
-n = int(input("Digite o número n: ")) 
+    lista = []
+    l = []
 
-lista = []
-l = []
-
-for linha in arquivo:
-    l = linha.split()
-    for palavra in l:
-        lista.append(palavra)
-
-for c in lista:
-    if len(c) >= n:
-        print(c)
-
-
-arquivo.close()
+    for linha in arquivo:
+        l = linha.split()
+        lista.extend(iter(l))
+    for c in lista:
+        if len(c) >= n:
+            print(c)

@@ -7,7 +7,7 @@ ced = 50
 totalced = 0
 
 nota50 = valor // 50
-valor = valor % 50
+valor %= 50
 
 print(nota50)
 print(valor)

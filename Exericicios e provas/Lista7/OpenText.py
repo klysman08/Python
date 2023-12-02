@@ -1,51 +1,39 @@
 import os
 
-manipulardor = open('texto.txt', 'r')
-print(manipulardor.read())
+with open('texto.txt', 'r') as manipulardor:
+    print(manipulardor.read())
 
-manipulardor.seek(0)
+    manipulardor.seek(0)
 
-print('--'*20)
-print('--'*20)
+    print('--'*20)
+    print('--'*20)
 
-print(manipulardor.readline())
-print(manipulardor.readline())
+    print(manipulardor.readline())
+    print(manipulardor.readline())
 
-print('--'*20)
-print('--'*20)
+    print('--'*20)
+    print('--'*20)
 
-print(manipulardor.readlines())
+    print(manipulardor.readlines())
 
-salve = manipulardor.readlines()
+    salve = manipulardor.readlines()
 
-manipulardor.close()
+with open('texto2.txt', 'w') as arquivo:
+    arquivo.writelines(salve)
 
-arquivo = open('texto2.txt', 'w')
+with open('texto.txt', 'r') as arquivo1:
+    arquivo2 = open('texto2.txt', 'w')
 
-
-arquivo.writelines(salve)
-
-arquivo.close()
-
-
-
-#Leitura do arquivo .txt e criação de um novo .txt2
+    salve1 = arquivo1.readlines()
+    print(len(salve1))
 
 
-arquivo1 = open('texto.txt', 'r')
-arquivo2 = open('texto2.txt', 'w')
+    for linha in arquivo1:
+        arquivo2.writelines(linha) #Escreve as mesmas linhas de 1 para o novo arquivo 2
+        print(linha) # imprime a linha
+        print(len(linha)) # tamanho da linha
 
-salve1 = arquivo1.readlines()
-print(len(salve1))
-
-
-for linha in arquivo1:
-    arquivo2.writelines(linha) #Escreve as mesmas linhas de 1 para o novo arquivo 2
-    print(linha) # imprime a linha
-    print(len(linha)) # tamanho da linha
-
-print('Arquivo copiado com sucesso!')
-arquivo1.close()
+    print('Arquivo copiado com sucesso!')
 arquivo2.close()
 
 
@@ -64,10 +52,10 @@ print("\n Foram retornadas" , contador, "linhas")
 
 #Apagar arquivo
 apagar = int(input('Digite 1 para apagar o arquivo ou 0 para não: '))
-if apagar == 1:
+if apagar == 0:
+    print('Arquivo não apagado')
+elif apagar == 1:
     os.remove("texto2.txt")
     print('Arquivo apagado com sucesso')
-elif apagar == 0:
-    print('Arquivo não apagado')
 else:
     print('Arquivo não encontrado')

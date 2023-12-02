@@ -15,10 +15,10 @@ print(f'Centena: {cen[n // 100]}')
 
 print(f'Milhar: {uni[n // 1000]}')
 
-c = int(n / 100)
-n = n - (c * 100)
-d = int(n / 10)
-n = n - (d * 10)
+c = n // 100
+n -= c * 100
+d = n // 10
+n -= d * 10
 res = cen[c] + dez[d] + uni[n]
 
 print('Número Romano:', res)

@@ -4,21 +4,18 @@
 # Use print("messages...") to debug your solution.
 
 def compute_recall(m):
-    recall = m.true_positive / (m.true_positive + m.false_negative)
-    return recall
+    return m.true_positive / (m.true_positive + m.false_negative)
 
 
 def compute_precision(m):
-    precision = m.true_positive / (m.true_positive + m.false_positive)
-    return precision
+    return m.true_positive / (m.true_positive + m.false_positive)
 
 
 def compute_specificity(m):
-    specificity = m.true_negative / (m.true_negative + m.false_positive)
-    return specificity
+    return m.true_negative / (m.true_negative + m.false_positive)
 
 
 def compute_accuracy(m):
-    accuracy = (m.true_positive + m.true_negative) / (m.true_positive +
-                                                      m.true_negative + m.false_positive + m.false_negative)
-    return accuracy
+    return (m.true_positive + m.true_negative) / (
+        m.true_positive + m.true_negative + m.false_positive + m.false_negative
+    )

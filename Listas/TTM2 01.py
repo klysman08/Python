@@ -5,8 +5,9 @@ uma string e imprima se esta string é um palíndromo ou não.
 (Palíndromo é uma palavra que é lida da esquerda para a direita,
 conforme o sentido habitual da leitura, ou da direita para esquerda). """
 
-lista1 = list()
-lista2 = list()
+
+lista1 = []
+lista2 = []
 
 while True:
     palavra = str(input('Digite uma palavra palíndromo: '))
@@ -15,12 +16,8 @@ while True:
     print(palavra2)
 
 
-    for c in palavra:
-        lista1.append(c)
-    
-    for i in reversed(palavra): #ou for i in palavra[::-1]
-        lista2.append(i)
-
+    lista1.extend(iter(palavra))
+    lista2.extend(iter(reversed(palavra)))
     print(lista1)
     print(lista2)
 
