@@ -1,5 +1,5 @@
 #089
-lista = list()
+lista = []
 i = j = 0
 while True:
     nome = str(input('Qual o nome do aluno: '))

@@ -1,6 +1,6 @@
 #080
 
-lista = list()
+lista = []
 
 for i in range(0, 5):
     n = int(input(f'Digite o {i+1} numero: '))

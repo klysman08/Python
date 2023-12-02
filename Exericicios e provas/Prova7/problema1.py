@@ -1,18 +1,14 @@
-arquivo = open("notas.txt", "r")
-medias = []
-for linha in arquivo:
-    campos = linha.split()
-    nome = campos[0]
-    
-    notas = []
-    for nota in campos[1:]:
-        notas.append(float(nota))
-        
-    media = sum(notas) / len(notas)
+with open("notas.txt", "r") as arquivo:
+    medias = []
+    for linha in arquivo:
+        campos = linha.split()
+        nome = campos[0]
 
-    medias.append(media)
+        notas = [float(nota) for nota in campos[1:]]
+        media = sum(notas) / len(notas)
+
+        medias.append(media)
 
 
-print(max(medias))
-print(min(medias))
-arquivo.close()
+    print(max(medias))
+    print(min(medias))

@@ -1,5 +1,5 @@
 
-ip = str(input(f'Digite um valor da parte: '))
+ip = str(input('Digite um valor da parte: '))
 
 new_ip = ip.split('.')
 

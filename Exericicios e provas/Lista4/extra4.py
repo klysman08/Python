@@ -8,30 +8,26 @@ while True:
     print('3. Multiplicação')
     print('4. Divisão')
     print('5. Saida')
-    
+
     n = int(input('Digite um número: '))
     if n == 5:
         break
-    
+
     if n == 1:
         x = int(input('Digite um número: '))
         y = int(input('Digite um número: '))
         print('1. Adição =', x + y)
-        #continue
-    if n == 2:
+    elif n == 2:
         x = int(input('Digite um número: '))
         y = int(input('Digite um número: '))
         print('2. Subtração =', x - y)
-        continue
-    if n == 3:
+    elif n == 3:
         x = int(input('Digite um número: '))
         y = int(input('Digite um número: '))
         print('3. Multiplicação =', x * y)
-        continue
-    if n == 4:
+    elif n == 4:
         x = int(input('Digite um número: '))
         y = int(input('Digite um número: '))
         print('4. Divisão =', x / y)
-        continue
     
     

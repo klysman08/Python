@@ -8,4 +8,4 @@ while (i != u):
     contador += 1
 
 print('Acertou!')
-print('Você chutou {} vezes até acertar!'.format(contador))
+print(f'Você chutou {contador} vezes até acertar!')

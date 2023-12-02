@@ -5,4 +5,4 @@ while count <= f:
     e = e*count
     count += 1
 resultado2 = e
-print("O resultado do fatarial digitado é: {}".format(resultado2))
+print(f"O resultado do fatarial digitado é: {resultado2}")

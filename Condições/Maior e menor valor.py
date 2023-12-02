@@ -16,12 +16,12 @@ if c < a and c < b:
     menor = c
 
 maior = a
-if b > a and b > a:
+if b > a:
     maior = a
 if c > a and c > b:
     maior = c
 
-print('O maior valor é {} e o menor valor é {} '.format(maior, menor))
+print(f'O maior valor é {maior} e o menor valor é {menor} ')
 
 n = [a, b, c]
-print('O maior valor é {} e o menor valor é {} '.format(max(n), min(n)))
+print(f'O maior valor é {max(n)} e o menor valor é {min(n)} ')

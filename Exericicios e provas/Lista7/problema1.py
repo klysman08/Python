@@ -1,15 +1,8 @@
-arquivo = open("texto.txt", 'r')
+with open("texto.txt", 'r') as arquivo:
+    texto = list(arquivo)
+    maior = max(texto, key=len)
 
-texto = []
+    maior = maior.rstrip()
 
-for linha in arquivo:
-    texto.append(linha)
-    
-maior = max(texto, key=len)
-
-maior = maior.rstrip()
-
-print (maior)
-print (len(maior))
-
-arquivo.close()
+    print (maior)
+    print (len(maior))

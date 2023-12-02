@@ -16,8 +16,9 @@ for i in range(0, len(lista)):
 print('Maior',max)
 print('Min',min)
 print('divisiveis',divisiveis) """
-        
 
+
+        
 num1 = int(input("Digite um número: "))
 num2 = int(input("Digite um número: "))
 num3 = int(input("Digite um número: "))
@@ -25,14 +26,11 @@ num4 = int(input("Digite um número: "))
 num5 = int(input("Digite um número: "))
 
 maior = num1
-menor = num1
 divisível = 0
 
 if num2 > maior:
     maior = num2
-if num2 < maior:
-    menor = num2
-
+menor = num2 if num2 < maior else num1
 if num3 > maior:
     maior = num3
 if num3 < menor:
@@ -49,15 +47,15 @@ if num5 < menor:
     menor = num5
 
 if num1 % 3 == 0:
-    divisível = divisível + 1
+    divisível += 1
 if num2 % 3 == 0:
-    divisível = divisível + 1
+    divisível += 1
 if num3 % 3 == 0:
-    divisível = divisível + 1
+    divisível += 1
 if num4 % 3 == 0:
-    divisível = divisível + 1
+    divisível += 1
 if num5 % 3 == 0:
-    divisível = divisível + 1
+    divisível += 1
 
 
 

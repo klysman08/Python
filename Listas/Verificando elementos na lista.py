@@ -1,5 +1,5 @@
 #079
-lista = list()
+lista = []
 while True:
     n = int(input('Digite um numero: '))
 
@@ -11,5 +11,5 @@ while True:
     else:
         lista.append(n)
 
-print(sorted(lista)) 
+print(sorted(lista))
 print(lista) 

@@ -1,24 +1,21 @@
 #084
 
-pessoas = list()
-lista = list()
+pessoas = []
+lista = []
 
-for i in range(0, 3):
-
-
-    pessoas.append(str(input('Insira o nome:')))
-    pessoas.append(int(input('Insira o peso:')))
+for _ in range(0, 3):
+    pessoas.extend((str(input('Insira o nome:')), int(input('Insira o peso:'))))
     lista.append(pessoas[:])
     pessoas.clear()
 
 
-pesados = list()
-magros = list()
+pesados = []
+magros = []
 
 for peso in lista:
     if peso[1] >= 80:
         pesados.append(peso)
-    elif peso[1] < 80:
+    else:
         magros.append(peso)
 
 print(len(lista))

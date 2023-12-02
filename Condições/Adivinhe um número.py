@@ -9,4 +9,4 @@ if a == comp:
     print('Parabens, voce acertou')
 else:
     print('Voce Errou')
-print('Ele pensou no {}'.format(comp))
+print(f'Ele pensou no {comp}')

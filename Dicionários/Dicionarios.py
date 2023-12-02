@@ -17,17 +17,18 @@ for k, v in dados.items(): # printa o identificador e o elemnto associado
     print(f'O {k} é {v}') """
 
 
+
 #Exemplos
 
 estado = dict()
-lista = list()
+lista = []
 
-for c in range(0, 3):
+for _ in range(0, 3):
     estado['UF'] = str(input('Nome do estado: '))
     estado['sigla'] = str(input('Qual a sigla: '))
     estado['Numero'] = str(input('Qual o numero: '))
     lista.append(estado.copy())
-    
+
 print(lista)
 
 for e in lista:

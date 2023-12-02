@@ -1,10 +1,8 @@
 saltos = []
-i = 0
-while i < 5:
+for _ in range(5):
     salto = float(input('Digite um salto: '))
     saltos.append(salto)
-    
-    i += 1
+
 saltos.sort()    
 
 meio = saltos[1:-1]

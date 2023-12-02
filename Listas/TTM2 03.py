@@ -3,10 +3,7 @@ from getpass import getpass
 palavra_secreta = str(getpass("Qual a palavra secreta?").upper())
 
 tracos = list(palavra_secreta)
-exibicao_lista = []
-
-for i in tracos:
-    exibicao_lista.append("_")
+exibicao_lista = ["_" for _ in tracos]
 cont = len(palavra_secreta)
 
 tentativas = 0
@@ -53,7 +50,9 @@ elif erros > 5:
     print("Você foi enforcado. :(")
 else:
     print(" ".join(exibicao_lista))
-    print("Parabéns, você advinhou que a palavra é " +
-        palavra_secreta+" depois de %s tentativas." % tentativas)
+    print(
+        f"Parabéns, você advinhou que a palavra é {palavra_secreta}"
+        + f" depois de {tentativas} tentativas."
+    )
 
 

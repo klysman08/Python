@@ -17,17 +17,11 @@ for linha in arquivo:
 	media = soma / 5
 	tempos[nome] = media
 
-lista_tempos = []
-
-for nome, tempo in tempos.items():
-	lista_tempos.append((tempo, nome))
-
+lista_tempos = [(tempo, nome) for nome, tempo in tempos.items()]
 lista_tempos.sort()
 
 print('Melhor volta:', melhor_nome, '-', melhor_tempo, 'segundos')
 print('Classificação final:')
 
-posicao = 1
-for tempo, nome in lista_tempos:
-	print('%d - %s - %.2f' % (posicao, nome, tempo))	
-	posicao += 1
+for posicao, (tempo, nome) in enumerate(lista_tempos, start=1):
+	print('%d - %s - %.2f' % (posicao, nome, tempo))

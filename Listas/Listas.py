@@ -3,7 +3,7 @@
 #É possível alterar os elementos das listas pois são mutaveis.
 
 #Alguns comandos 
-lista1 = list() #cria uma lista vazia  
+lista1 = []
 lista = [1, 2, 3, 'test']
 
 del lista[3] #Remove o elemento na posição 3

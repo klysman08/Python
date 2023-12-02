@@ -28,5 +28,5 @@ else:
     else:
         menor = dig1
         mediana = dig2
-    
-print('Mediana: {}'.format(mediana))
+
+print(f'Mediana: {mediana}')

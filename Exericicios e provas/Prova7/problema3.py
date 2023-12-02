@@ -22,8 +22,14 @@ for i in datas:
 
 def calcula_idade(data_nascimento): 
     today = datetime(2021,12,31)
-    age = today.year - data_nascimento.year - ((today.month, today.day) < (data_nascimento.month, data_nascimento.day)) 
-    return age 
+    return (
+        today.year
+        - data_nascimento.year
+        - (
+            (today.month, today.day)
+            < (data_nascimento.month, data_nascimento.day)
+        )
+    ) 
 
 for n in range(0,len(nomes)):
     idade = lista_datas[n]

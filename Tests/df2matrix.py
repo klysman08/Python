@@ -28,7 +28,4 @@ def df2matrix(df):
     # Combine the MedianScore column and the indicator matrix into a single DataFrame
     data_matrix = pd.concat([df['MedianScore'], indicator_matrix], axis=1)
 
-    # Convert the DataFrame to a NumPy array
-    np_array = data_matrix.to_numpy()
-
-    return np_array
+    return data_matrix.to_numpy()

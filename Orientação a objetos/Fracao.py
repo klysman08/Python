@@ -9,10 +9,7 @@ class Fracao:
     def __init__(self, num, den):
         self.numerador = num
 
-        if den == 0:
-            self.denominador = 1
-        else:
-            self.denominador = den
+        self.denominador = 1 if den == 0 else den
 
     def somar(self, outra):
         if self.denominador == outra.denominador:
@@ -42,13 +39,10 @@ class Fracao:
         return Fracao(-self.numerador, -self.denominador)
 
     def __str__(self):
-        representation = "{}/{}".format(self.numerador, self.denominador)
-        return representation
+        return f"{self.numerador}/{self.denominador}"
 
     def __repr__(self):
-        representation = "Fracao({}, {})".format(
-            self.numerador, self.denominador)
-        return representation
+        return f"Fracao({self.numerador}, {self.denominador})"
 
 
 print("*"*30)

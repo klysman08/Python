@@ -1,21 +1,18 @@
 #Lsitas dentro de listas
 
 dados = ['klysman', 'engenharia']
-pessoas = list()
-pessoas.append(dados[:])
-
+pessoas = [dados[:]]
 print(pessoas)
 print(pessoas[0][0])
 
-galera = list()
-dados = list()
+galera = []
+dados = []
 maior = menor = 0
-for c in range(0, 3):
-    dados.append(str(input('Nome: ')))
-    dados.append(int(input('Idade: ')))
+for _ in range(0, 3):
+    dados.extend((str(input('Nome: ')), int(input('Idade: '))))
     galera.append(dados[:])
     dados.clear()  #Limpa a lista por completo
-    
+
 print(galera)
 
 for p in galera:
